@@ -2,7 +2,8 @@ import telebot
 from jinja2 import Template
 from os import getenv
 
-from models import catalog
+from app import db
+from models import Pizza
 
 TOKEN = getenv('BOT_TOKEN')
 if not TOKEN:
@@ -22,6 +23,7 @@ def greet(message):
 
 @bot.message_handler(commands=['menu'])
 def show_catalog(message):
+    catalog = db.session.query(Pizza).all()
     bot.send_message(message.chat.id, catalog_tmpl.render(catalog=catalog), parse_mode='Markdown')
 
 if __name__ == '__main__':
