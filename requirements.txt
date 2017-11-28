@@ -1,2 +1,4 @@
 pytelegrambotapi==2.3.0
-jinja2==2.8
+jinja2==2.10
+Flask-Admin==1.5.0
+Flask-SQLAlchemy==2.3.2
