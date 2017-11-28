@@ -1,0 +1,5 @@
+export DATABASE_URI='pizzeria.db'
+export ADMIN_LOGIN='admin'
+export ADMIN_PASSWORD='qwerty12'
+export SECRET_KEY='qazwecd1254rf'
+
