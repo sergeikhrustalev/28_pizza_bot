@@ -26,7 +26,7 @@ Step 4. Enter admin interface
 ```
 $python server.py
 ```
-* Open [admin interface](http://localhost:5000)
+* Open [admin interface](http://localhost:5000/admin)
 * Input admin login and password to access it.
 
 
