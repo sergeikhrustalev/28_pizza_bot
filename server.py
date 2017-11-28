@@ -4,7 +4,6 @@ from flask_admin.contrib.sqla import ModelView
 from flask import request, Response
 from werkzeug.exceptions import HTTPException
 
-
 from app import app, db
 from models import Pizza, Choice
 
