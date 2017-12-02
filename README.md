@@ -6,7 +6,7 @@
 Step 1. Activate environment variables
 
 ```
-$. setenv
+$ . setenv
 ```
 
 Step 2. Creating database structure
