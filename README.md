@@ -18,7 +18,7 @@ $python db_create.py
 Step 3. Import catalog to database.
 
 ```
-$python db_import.py
+$python db_import.py <catalog filename>
 ```
 
 Step 4. Enter admin interface
