@@ -15,6 +15,8 @@ if __name__ == '__main__':
 
     catalog_filename = sys.argv[1] if len(sys.argv) > 1 else 'catalog.json'
 
+    catalog = list()
+
     for entry in load_catalog(catalog_filename):
 
         pizza = Pizza(
@@ -29,7 +31,9 @@ if __name__ == '__main__':
                 )
             )
 
-        db.session.add(pizza)
-        
+        catalog.append(pizza)
+
+    
+    db.session.add_all(catalog)
     db.session.commit()
 
