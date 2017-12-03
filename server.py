@@ -15,8 +15,9 @@ class AuthException(HTTPException):
         super().__init__(
 
             message, Response(
-                "You could not be authenticated. Please refresh the page.", 401,
-                {'WWW-Authenticate': 'Basic realm="Login Required"'}
+
+                "You could not be authenticated. Please refresh the page.", status=401,
+                headers={'WWW-Authenticate': 'Basic realm="Login Required"'}
             )
 
         )
