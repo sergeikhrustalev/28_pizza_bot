@@ -33,7 +33,6 @@ if __name__ == '__main__':
 
         catalog.append(pizza)
 
-    
     db.session.add_all(catalog)
     db.session.commit()
 
