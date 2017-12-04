@@ -35,4 +35,4 @@ if __name__ == '__main__':
 
     db.session.add_all(catalog)
     db.session.commit()
-
+    
